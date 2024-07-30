@@ -36,19 +36,7 @@ if( isset( $_POST['email'] ) )
 }?>
   <?php include('reusable/header.php'); ?>
   <?php include('reusable/nav.php'); ?>
-  <form method="POST">
-        <p>
-            <label for="email">Email: </label>
-            <input type="email" name="email">
-        </p>
-        <p>
-            <label for="password">Password: </label>
-            <input type="password" name="password">
-        </p>
-        <p>
-            <input type="submit" value="Login">
-        </p>
-    </form>
+  
 <?php
   include( 'reusable/footer.php' );
 ?>

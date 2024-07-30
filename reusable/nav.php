@@ -9,8 +9,7 @@
         <li><a href=".">Home</a></li>
         <li><a href="#">Builder</a></li>
         <li><a href="#">Guides</a></li>
-        <li><a href="#">Logout</a></li>
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </nav>
   </div> <!-- /headerContainer  -->
