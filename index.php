@@ -3,40 +3,29 @@
   include( 'reusable/config.php' );
   include( 'reusable/functions.php' );
 ?>
-<?php
-if( isset( $_POST['email'] ) )
-{
-  
-  $query = 'SELECT * FROM user WHERE email = "' . mysqli_real_escape_string($connect, $_POST['email']) . '" AND password = "' . md5(mysqli_real_escape_string($connect, $_POST['password'])) . '" LIMIT 1';
 
-  $result = mysqli_query( $connect, $query );
-  
-  if( mysqli_num_rows( $result ) )
-  {
-    
-    $record = mysqli_fetch_assoc( $result );
-    
-    $_SESSION['user_id'] = $record['user_id'];
-    $_SESSION['email'] = $record['email'];
-    
-    header( 'Location: dashboard.php' );
-    die();
-    
-  }
-  else
-  {
-    
-    set_message( 'Incorrect email and/or password' );
-    
-    header( 'Location: index.php' );
-    die();
-    
-  } 
-  
-}?>
   <?php include('reusable/header.php'); ?>
   <?php include('reusable/nav.php'); ?>
-  
+  <h2>PCPARTPICKER</h2>
+  <p>We provide computer builders.</p>
+  <h2>Build GUides</h2>
+  <div class="container">
+    <div class="product_container">
+      <p><img src="" alt=""></p>
+      <h3>Entry Level Intel Gaming Build</h3>
+      <p>$593.67</p>
+    </div><!-- product_container -->
+    <div class="product_container2">
+      <p><img src="" alt=""></p>
+      <h3>Excellent AMD Gaming/Streaming Build</h3>
+      <p>$1305.63</p>
+    </div><!-- product_container2 -->
+    <div class="product_container3">
+      <p><img src="" alt=""></p>
+      <h3>Enthusiast AMD Gaming/Streaming Build</h3>
+      <p>$1522.61</p>
+    </div><!-- product_container2 -->
+  </div><!-- container -->
 <?php
   include( 'reusable/footer.php' );
 ?>
