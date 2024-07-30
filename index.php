@@ -9,6 +9,7 @@
   <h2>PCPARTPICKER</h2>
   <p>We provide computer builders.</p>
   <h2>Build GUides</h2>
+  <!-- Need to connect to the database later. -->
   <div class="container">
     <div class="product_container">
       <p><img src="" alt=""></p>

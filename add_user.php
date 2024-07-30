@@ -3,11 +3,11 @@
   include('reusable/config.php');
   include('reusable/functions.php');
 ?>
-<?php 
-  //SELECT user's information.
-  $query = 'SELECT * FROM user';
-  $property = mysqli_query($connect, $query);
-?>  
+ <?php 
+ //SELECT user's information.
+      $query = 'SELECT * FROM user';
+      $users = mysqli_query($connect, $query);
+  ?>
 <?php include('reusable/header.php'); ?>
 <?php include('reusable/nav.php'); ?>
 <h2>User Add Page</h2>
