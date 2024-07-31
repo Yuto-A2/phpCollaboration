@@ -1,4 +1,9 @@
 <?php
+  include( 'reusable/env.php' );
+  include( 'reusable/config.php' );
+  include( 'reusable/functions.php' );
+?>
+<?php
 if( isset( $_POST['email'] ) )
 {
   
