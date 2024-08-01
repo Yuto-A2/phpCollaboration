@@ -1,4 +1,5 @@
 <!-- This page is for updating user's information. -->
+<!-- Example, http://localhost/phpCorabollation/users.php?user_id=2  -->
 <?php
 ini_set('display_errors', '1');
 include('reusable/env.php');
@@ -26,7 +27,6 @@ if (isset($_POST['email'])) {
             LIMIT 1';
         
         //Checking if it is updated, it goes to index.php   
-        //Example, http://localhost/phpCorabollation/users.php?user_id=2 
         if (mysqli_query($connect, $query)) {
             set_message('User has been updated');
             header('Location: index.php');
