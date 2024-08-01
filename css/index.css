@@ -1,3 +1,28 @@
+/* common design */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li a {
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+li a:hover{
+    cursor: pointer;
+    color: red;
+    
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+/* index.php. product box */
 .container {
     display: flex;
     flex-direction: row;
@@ -7,18 +32,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    border: solid black 1px;
+    padding: 15px;
 }
-
-.product_container2 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-}
-
-.product_container3 {
-    display: flex;
-    flex-direction: column;
-}
-
-
 

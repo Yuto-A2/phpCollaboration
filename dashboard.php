@@ -12,18 +12,23 @@ include( 'reusable/header.php' );
 
 <ul id="dashboard">
   <li>
-    <a href="projects.php">
-      Manage Projects
+    <a href="orders.php">
+      Your order
     </a>
   </li>
   <li>
-    <a href="users.php">
-      Manage Users
+    <a href="#">
+      Change password
     </a>
   </li>
   <li>
     <a href="logout.php">
       Logout
+    </a>
+  </li>
+  <li>
+    <a href="deleteAccount.php">
+      Delete your account
     </a>
   </li>
 </ul>

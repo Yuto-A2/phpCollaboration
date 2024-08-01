@@ -6,11 +6,13 @@ include('reusable/functions.php');
 
 // secure();
 
+//If there isn't customer_id, it goes to customer.php
 if (!isset($_GET['customer_id'])) {
-    header('Location: customers.php');
+    header('Location: index.php');
     die();
 }
 
+//Checking if user_fname exsist, and it goes to the database. 
 if (isset($_POST['user_fname'])) {
     if ($_POST['user_fname'] && $_POST['user_lname']) {
         $query = 'UPDATE customer SET
@@ -25,7 +27,8 @@ if (isset($_POST['user_fname'])) {
         die();
     }
 }
-
+//Checking if it is updated, and if not, it goes to customers.php 
+//Example, http://localhost/phpCorabollation/customer_update.php?customer_id=1
 if (isset($_GET['customer_id'])) {
     $query = 'SELECT * FROM customer WHERE customer_id = ' . $_GET['customer_id'] . ' LIMIT 1';
     $result = mysqli_query($connect, $query);
