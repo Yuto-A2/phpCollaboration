@@ -1,4 +1,5 @@
 <!-- This page for updating customers. -->
+<!-- Example, http://localhost/phpCorabollation/customer_update.php?customer_id=1 -->
 <?php
 ini_set('display_errors', '1');
 include('reusable/env.php');
@@ -29,7 +30,6 @@ if (isset($_POST['user_fname'])) {
     }
 }
 //Checking if it is updated, and if not, it goes to customers.php 
-//Example, http://localhost/phpCorabollation/customer_update.php?customer_id=1
 if (isset($_GET['customer_id'])) {
     $query = 'SELECT * FROM customer WHERE customer_id = ' . $_GET['customer_id'] . ' LIMIT 1';
     $result = mysqli_query($connect, $query);
