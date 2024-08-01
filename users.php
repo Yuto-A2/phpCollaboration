@@ -52,6 +52,7 @@ include('reusable/header.php');
 include('reusable/nav.php');
 ?>
 
+<!-- Users can change theri information. -->
  <h2>Change your information</h2>
 
  <form class="userInfo" method="post">

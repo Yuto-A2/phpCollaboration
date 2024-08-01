@@ -9,7 +9,20 @@
   <?php include('reusable/nav.php'); ?>
   <h2>Order</h2>
   <?php
-$query = 'SELECT orders.order_id, product.product_id, orders.quantity, product.price, product.img, product.product_name FROM orders JOIN product ON orders.order_id = product.product_id';
+$query = 'SELECT 
+orders.order_id, 
+product.product_id, 
+customer.customer_id, 
+orders.quantity, 
+product.price, 
+product.product_name 
+FROM 
+orders 
+JOIN 
+product ON orders.product_id = product.product_id 
+JOIN 
+customer ON orders.customer_id = customer.customer_id';
+
 $result = mysqli_query($connect, $query);
 ?>
   <h2>Your Order</h2>

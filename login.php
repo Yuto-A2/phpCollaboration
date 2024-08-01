@@ -34,6 +34,8 @@ if( isset( $_POST['email'] ) )
   } 
   
 }?>
+
+<!-- Login page -->
 <form action="dashboard.php" method="POST">
         <p>
             <label for="email">Email: </label>
