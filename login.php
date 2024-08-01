@@ -36,7 +36,7 @@ if( isset( $_POST['email'] ) )
 }?>
 
 <!-- Login page -->
-<form action="dashboard.php" method="POST">
+<form action="login.php" method="POST">
         <p>
             <label for="email">Email: </label>
             <input type="email" name="email" autocomplete="email">

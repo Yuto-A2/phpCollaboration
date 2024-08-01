@@ -12,13 +12,8 @@ include( 'reusable/header.php' );
 
 <ul id="dashboard">
   <li>
-    <a href="customer.php">
+    <a href="customers.php">
       Customer Add
-    </a>
-  </li>
-  <li>
-    <a href="product.php">
-      Product Add
     </a>
   </li>
   <li>
