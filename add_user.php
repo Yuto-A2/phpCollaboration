@@ -1,3 +1,4 @@
+<!-- This page for adding users. -->
 <?php
   ini_set('display_errors', '1');
   include('reusable/env.php');

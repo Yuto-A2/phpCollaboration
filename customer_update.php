@@ -1,3 +1,4 @@
+<!-- This page for updating customers. -->
 <?php
 ini_set('display_errors', '1');
 include('reusable/env.php');
