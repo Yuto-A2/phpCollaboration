@@ -23,7 +23,7 @@ include( 'reusable/header.php' );
   </li>
   <li>
     <a href="deleteAccount.php">
-      Delete your account
+      Delete accounts
     </a>
   </li>
 </ul>
