@@ -1,3 +1,4 @@
+<!-- This page for adding customers. -->
 <?php
   require( 'reusable/env.php' );
   include( 'reusable/functions.php' );
