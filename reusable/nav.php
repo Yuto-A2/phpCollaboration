@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/style.css">
 <body>
   <?php get_message(); ?>
   <div class="headerContainer">
@@ -7,7 +6,6 @@
     <nav>
       <ul>
         <li><a href=".">Home</a></li>
-        <li><a href="#">Builder</a></li>
         <li><a href="add_user.php">Sign Up</a></li>
         <li><a href="login.php">Login</a></li>
       </ul>

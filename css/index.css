@@ -1,31 +1,100 @@
 /* common design */
-ul {
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2, h3, p {
+    padding-left: 15px;
+}
+
+/* Navigation */
+nav ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 50px;
 }
 
-li a {
+nav a {
+    color: white;
+}
+
+nav li a {
     text-decoration: none;
     transition: color 0.5s;
 }
 
-li a:hover{
+ nav li a:hover{
     cursor: pointer;
     color: red;
     
 }
+/* Navigation smartphone */
+@media (max-width: 385px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: white;
+        margin-bottom: 60px;
+    }
+
+    nav li {
+        margin-bottom: 10px
+    }
+
+    nav a {
+        color: black;
+    }
+}
+
+/* application form */
 
 label {
     display: flex;
     flex-direction: column;
 }
 
+.btn {
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #7595e5;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: pink;
+}
+
 /* index.php. product box */
 .container {
     display: flex;
     flex-direction: row;
+    margin-left: 15px;
 }
 
 .product_container {
@@ -35,4 +104,82 @@ label {
     border: solid black 1px;
     padding: 15px;
 }
+
+/* Product box tablet or smartphone */
+@media (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_container {
+        align-items: center;
+        text-wrap: wrap;
+    }
+}
+
+/* add_user.php */
+.loginUser{
+    text-align: center;
+}
+
+.applicationForm {
+    text-align: center;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border: 2px solid #007bff; 
+    background-color: #f0f8ff;
+    outline: none; 
+}
+
+/* Login page */
+.loginForm {
+    text-align: center;
+}
+
+/* Dashboard */
+ #dashboard  {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+#dashboard a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+ #dashboard li a:hover{
+    cursor: pointer;
+    color: red;
+    
+}
+/* dashboard h2 */
+.dashboard {
+    font-size: 1.6rem;
+    text-align: center;
+}
+/* Navigation smartphone */
+@media (max-width: 385px) {
+    #dashboard  {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 60px;
+    }
+
+    #dashboard li {
+        margin-bottom: 10px
+    }
+}
+
 

@@ -6,10 +6,10 @@ include( 'reusable/functions.php' );
 
 secure();
 
-include( 'reusable/header.php' );
-
 ?>
 
+<?php include('reusable/header.php'); ?>
+<h2 class="dashboard">Welcome to Computer Part</h2>
 <ul id="dashboard">
   <li>
     <a href="customers.php">

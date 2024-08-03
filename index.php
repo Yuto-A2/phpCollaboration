@@ -20,7 +20,7 @@ $result = mysqli_query($connect, $query);
         while ($product = mysqli_fetch_assoc($result)): ?>
             <div class="product_container">
               <p><img src="<?php echo 'img/' . htmlentities($product['img']); ?>" alt="<?php echo htmlentities($product['product_name']); ?>"></p>
-              <h3><?php echo htmlentities($product['product_name']); ?></h3>
+              <p><?php echo htmlentities($product['product_name']); ?></p>
               <p>$<?php echo htmlentities(number_format($product['price'], 2)); ?></p>
             </div><!-- product_container -->
         <?php endwhile;

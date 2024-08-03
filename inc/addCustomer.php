@@ -18,7 +18,7 @@ ini_set('display_errors', '1');
 
   if($customer){
     set_message('Customer added successfully!', 'success');
-    header('Location: ../index.php');
+    header('Location: ../customers.php');
   }else{
     echo "Failed: " . mysqli_error($connect);
   }

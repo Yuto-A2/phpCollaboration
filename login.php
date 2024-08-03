@@ -34,9 +34,11 @@ if( isset( $_POST['email'] ) )
   } 
   
 }?>
-
+ <?php include('reusable/header.php'); ?>
+ <?php include('reusable/nav.php'); ?>
+ <h2 class="loginForm">Login</h2>
 <!-- Login page -->
-<form action="login.php" method="POST">
+<form class="applicationForm" action="login.php" method="POST">
         <p>
             <label for="email">Email: </label>
             <input type="email" name="email" autocomplete="email">
@@ -46,6 +48,6 @@ if( isset( $_POST['email'] ) )
             <input type="password" name="password" autocomplete="current-password">
         </p>
         <p>
-            <input type="submit" value="Login">
+            <input class="btn" type="submit" value="Login">
         </p>
     </form>

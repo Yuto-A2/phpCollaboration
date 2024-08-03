@@ -12,7 +12,7 @@
   ?>
 <?php include('reusable/header.php'); ?>
 <?php include('reusable/nav.php'); ?>
-<h2>User Add Page</h2>
+<h2 class="loginUser">User Add Page</h2>
 <!-- User Adding -->
 <form class="applicationForm" action="inc/userAdd.php" method="POST">
   <div class="container1">
@@ -27,7 +27,7 @@
    <label for="password">Password:</label>
    <input type="password" class="form-control" id="pw" name="password">
   </div>
-  <button type="submit" class="btn">Submit</button>
+  <button type="submit" class="btn">Sign Up</button>
 </form>  
 <?php include('reusable/footer.php'); ?>
 
