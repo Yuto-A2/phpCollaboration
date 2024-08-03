@@ -8,7 +8,6 @@
 ?>
 
 <h2>Customer Management</h2>
-
 <?php
 $query = 'SELECT * FROM customer ';
 $customers = mysqli_query($connect, $query);

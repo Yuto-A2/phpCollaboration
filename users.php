@@ -1,5 +1,5 @@
 <!-- This page is for updating user's information. -->
-<!-- Example, http://localhost/phpCorabollation/users.php?user_id=2  -->
+<!-- Example, http://localhost/phpCorabollation/users.php?user_id=3  -->
 <?php
 ini_set('display_errors', '1');
 include('reusable/env.php');

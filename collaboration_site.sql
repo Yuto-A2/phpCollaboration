@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Aug 01, 2024 at 04:37 PM
+-- Generation Time: Aug 03, 2024 at 12:39 AM
 -- Server version: 5.7.24
 -- PHP Version: 8.3.9
 
@@ -40,7 +40,8 @@ CREATE TABLE `customer` (
 INSERT INTO `customer` (`customer_id`, `user_fname`, `user_lname`) VALUES
 (1, 'Ringo', 'Starr'),
 (3, 'Paul', 'McCartney'),
-(4, 'John', 'Lennon');
+(4, 'John', 'Lennon'),
+(5, 'John', 'Smith');
 
 -- --------------------------------------------------------
 
@@ -118,7 +119,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `password`) VALUES
-(2, 'Ponta', 'taro@gmail.com', '$2y$10$08aUopvXb4Z6y4RV.GTrp.bQ39DerJmT8AX61asSPrUd62Lik/VIC');
+(3, 'John', 'john@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99');
 
 --
 -- Indexes for dumped tables
@@ -168,7 +169,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `management`
@@ -192,7 +193,7 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
