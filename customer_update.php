@@ -55,10 +55,10 @@ include('reusable/nav.php');
     <input type="text" name="user_lname" id="last" value="<?php echo htmlentities($record['user_lname']); ?>">
 
     <br>
-    <input type="submit" value="Edit User">
+    <input type="submit" value="Edit User" class="btn">
 </form>
-
-<p><a href="customers.php"><i class="fas fa-arrow-circle-left"></i> Return to Customer List</a></p>
+<?php ?>
+<p><a href="customers.php"> Return to Customer List</a></p>
 
 <?php
 include('reusable/footer.php');

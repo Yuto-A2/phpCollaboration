@@ -13,7 +13,12 @@ secure();
 <ul id="dashboard">
   <li>
     <a href="customers.php">
-      Customer Add
+      Add Customers
+    </a>
+  </li>
+  <li>
+    <a href="deleteCustomer.php">
+      Delete Customers
     </a>
   </li>
   <li>

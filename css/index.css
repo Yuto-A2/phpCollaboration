@@ -137,6 +137,12 @@ input:focus {
     outline: none; 
 }
 
+/* customers.php */
+.addCustomer {
+    text-align: center;
+}
+
+
 /* Login page */
 .loginForm {
     text-align: center;
@@ -183,3 +189,18 @@ input:focus {
 }
 
 
+/* deleteCustomer.php */
+.deleteCustomer {
+    margin-left: 15px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #7595e5;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.deleteCustomer:hover {
+    cursor: pointer;
+    background-color: pink;
+}

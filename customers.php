@@ -3,10 +3,9 @@
   require( 'reusable/env.php' );
   include( 'reusable/functions.php' );
   include( 'reusable/config.php' );
-  include('reusable/header.php');
-  include('reusable/nav.php');
 ?>
-
+ <?php include('reusable/header.php'); ?>
+ <?php include('reusable/nav.php'); ?>
 <h2>Customer Management</h2>
 <?php
 $query = 'SELECT * FROM customer ';
@@ -15,10 +14,11 @@ $customers = mysqli_query($connect, $query);
 <?php
    foreach($customers as $customer){
     echo 
-'<p>' . $customer['user_fname'] . ' ' . $customer['user_lname'] . '</p>';
+'<p><a href="/phpCorabollation/customer_update.php?customer_id='.$customer['customer_id'].'"> ' . $customer['user_fname'] . ' ' . $customer['user_lname'] . '</a></p>';
+
    }
  ?>
-<h2>Add Customer</h2>
+<h2 class="addCustomer">Add Customer</h2>
  <!-- application form -->
  <form class="applicationForm" action="inc/addCustomer.php" method="POST">
   <div class="appContainer">
