@@ -5,7 +5,7 @@ require('reusable/env.php');
 include('reusable/functions.php');
 include('reusable/config.php');
 include('reusable/header.php');
-include('reusable/nav.php');
+include('reusable/loginednav.php'); 
 ?>
 
 <h2>Delete your Account</h2>

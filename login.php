@@ -7,7 +7,7 @@
 if( isset( $_POST['email'] ) )
 {
   
-  $query = 'SELECT * FROM user WHERE email = "' . mysqli_real_escape_string($connect, $_POST['email']) . '" AND password = "' . md5(mysqli_real_escape_string($connect, $_POST['password'])) . '" LIMIT 1';
+  $query = 'SELECT * FROM user WHERE email = "' . mysqli_real_escape_string($connect, $_POST['email']) . '" AND password = "' . mysqli_real_escape_string($connect, $_POST['password']) . '" LIMIT 1';
 
   $result = mysqli_query( $connect, $query );
   

@@ -5,7 +5,7 @@
   include( 'reusable/config.php' );
 ?>
  <?php include('reusable/header.php'); ?>
- <?php include('reusable/nav.php'); ?>
+ <?php include('reusable/loginednav.php'); ?>
 <h2>Customer Management</h2>
 <?php
 $query = 'SELECT * FROM customer ';
@@ -18,6 +18,7 @@ $customers = mysqli_query($connect, $query);
 
    }
  ?>
+ 
 <h2 class="addCustomer">Add Customer</h2>
  <!-- application form -->
  <form class="applicationForm" action="inc/addCustomer.php" method="POST">
